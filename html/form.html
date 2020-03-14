@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <title>forms</title>
-    </head>
-    <body>
-    <form method="post" name="myemailform" action="form-to-email.php">
-
-Enter Name:	<input type="text" name="name">
-
-Enter Email Address:	<input type="text" name="email">
-
-Enter Message:	<textarea name="message"></textarea>
-
-<input type="submit" value="Send Form">
-</form>
-    </body>
-    </html>
+<html>
+  <head>
+    <title>forms</title>
+  </head>
+  <body>
+    <h2>header</h2>
+    <form action="mailto:maxstothart2020@gmail.com" method="get" enctype="text/plain">
+      <p>Name: <input type="text" name="name"/></p>
+      <p>Email: <input type="text" name="email"/></p>
+      <p>Comments:
+        <br />
+        <textarea name="title" rows = "12" cols = "35">type something here</textarea>
+        <br>
+      <p><input type="submit" name="submit" value="Send" />
+        <input type="reset" name="reset" value="Clear Form" />
+      </p>
+    </form>
+  </body>
+</html>
